@@ -17,17 +17,17 @@
 | **doppleganger** | `https://github.com/austindixson/doppleganger` | Pushed (main) |
 | **FACEPALM** | `https://github.com/austindixson/FACEPALM` | Pushed (main) |
 | **funclip-commander** | `https://github.com/austindixson/funclip-commander` | Pushed (main) |
-| **gateway-guard** | `https://github.com/RuneweaverStudios/gateway-guard` | Pushed (main) |
-| **gateway-watchdog** | `https://github.com/RuneweaverStudios/gateway-watchdog` | Pushed (main); requires gateway-guard |
+| **gateway-guard** | `https://github.com/austindixson/gateway-guard` | Pushed (main) |
+| **gateway-watchdog** | `https://github.com/austindixson/gateway-watchdog` | Pushed (main); requires gateway-guard |
 | **launchagent-manager** | `https://github.com/austindixson/launchagent-manager` | Pushed (main) |
 | **project-manager-agent** | `https://github.com/austindixson/project-manager-agent` | Pushed (main) |
 | **self-optimizer** | `https://github.com/austindixson/self-optimizer` | Pushed (main) |
 | **skill-doc-formatter** | `https://github.com/austindixson/skill-doc-formatter` | Pushed (main) |
 | **skill-tester** | `https://github.com/austindixson/skill-tester` | Pushed (main) |
 | **subagent-dashboard** | `https://github.com/austindixson/subagent-dashboard` | Pushed (main) |
-| **subagent-tracker** | `https://github.com/RuneweaverStudios/subagent-tracker` | Pushed (main) |
+| **subagent-tracker** | `https://github.com/austindixson/subagent-tracker` | Pushed (main) |
 | **tweet-crafter** | `https://github.com/austindixson/tweet-crafter` | Pushed (main) |
-| **what-just-happened** | `https://github.com/RuneweaverStudios/what-just-happened` | Pushed (main) |
+| **what-just-happened** | `https://github.com/austindixson/what-just-happened` | Pushed (main) |
 | **youtube_downloads** | `https://github.com/austindixson/youtube_downloads` | Pushed (main) |
 
 **Removed:** friday-router (redundant with agent-swarm).
