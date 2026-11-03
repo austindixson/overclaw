@@ -5,7 +5,7 @@
 set -e
 
 SKILLS_DIR="/Users/ghost/.openclaw/workspace/skills"
-GITHUB_ORG="RuneweaverStudios"
+GITHUB_ORG="austindixson"
 SKILLS_WITHOUT_REPOS=("clawhub-publisher" "goals" "remotion-video" "scribe" "skill-doctor")
 
 cd "$SKILLS_DIR"

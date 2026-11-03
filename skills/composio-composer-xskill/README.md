@@ -172,4 +172,4 @@ For issues or questions, please refer to:
 
 ## Credits
 
-Built for OpenClaw by Runeweaver Studios
+Built for OpenClaw by Austin Dixson

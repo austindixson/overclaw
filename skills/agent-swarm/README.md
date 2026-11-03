@@ -7,14 +7,14 @@
 
 **LLM routing and subagent delegation.** Routes each task to the right model, spawns subagents, and reduces API costs by using cheaper models for simple tasks. **Parallel tasks:** one message can spawn multiple subagents at once (e.g. "fix the bug and write a poem" → code + creative in parallel).
 
-**v1.7.8** — Router rejects prompt-injection patterns; COMPLEX tier, absolute paths for TUI delegation. **Security:** No gateway auth exposure; input validation and config-patch whitelist; task strings containing `<script>`, `javascript:`, or event-handler patterns are rejected. **Source:** [github.com/RuneweaverStudios/agent-swarm](https://github.com/RuneweaverStudios/agent-swarm). **Local skill path:** `workspace/skills/agent-swarm/` (or `$OPENCLAW_HOME/workspace/skills/agent-swarm/`).
+**v1.7.8** — Router rejects prompt-injection patterns; COMPLEX tier, absolute paths for TUI delegation. **Security:** No gateway auth exposure; input validation and config-patch whitelist; task strings containing `<script>`, `javascript:`, or event-handler patterns are rejected. **Source:** [github.com/austindixson/agent-swarm](https://github.com/austindixson/agent-swarm). **Local skill path:** `workspace/skills/agent-swarm/` (or `$OPENCLAW_HOME/workspace/skills/agent-swarm/`).
 
 Agent Swarm | OpenClaw Skill routes your OpenClaw tasks to the best LLM for the job and delegates work to subagents. You save API costs (orchestrator stays on a cheap model; only the task runs on the matched model) and get better results—GLM 4.7 for code, Kimi k2.5 for creative, Grok Fast for research.
 
 **Security improvements in v1.7.0+:** 
 - Removed gateway auth token/password exposure from router output
 - Gateway management functionality has been removed - use the separate [gateway-guard](https://clawhub.ai/skills/gateway-guard) skill if gateway auth management is needed
-- FACEPALM troubleshooting integration has been removed - use the separate [FACEPALM](https://github.com/RuneweaverStudios/FACEPALM) skill if troubleshooting is needed
+- FACEPALM troubleshooting integration has been removed - use the separate [FACEPALM](https://github.com/austindixson/FACEPALM) skill if troubleshooting is needed
 - **v1.7.3+**: Added comprehensive input validation, config patch validation, and security documentation
 - **v1.7.4+**: Clarified "saves tokens" means cost savings (not token storage), removed hard-coded paths, documented file access scope
 - **v1.7.5+**: Declared required environment variables and credentials in metadata, enhanced requirements documentation
@@ -347,7 +347,7 @@ cost = router.estimate_cost("design landing page")         # → {tier, model, c
 **Removed functionality (for improved security rating):**
 - **Gateway guard integration** — Removed `gateway_watchdog.py` and gateway auth management functionality. Use the separate [gateway-guard](https://clawhub.ai/skills/gateway-guard) skill for gateway auth checking and management.
 - **Gateway auth secret exposure** — Removed `get_openclaw_gateway_config()` function that exposed gateway tokens/passwords in router output. Router spawn output no longer includes `gatewayToken`, `gatewayPassword`, `gatewayAuthMode`, or `gatewayPort`.
-- **FACEPALM troubleshooting integration** — Removed troubleshooting loop detection and automatic FACEPALM invocation. Use the separate [FACEPALM](https://github.com/RuneweaverStudios/FACEPALM) skill if intelligent troubleshooting is needed.
+- **FACEPALM troubleshooting integration** — Removed troubleshooting loop detection and automatic FACEPALM invocation. Use the separate [FACEPALM](https://github.com/austindixson/FACEPALM) skill if intelligent troubleshooting is needed.
 
 **Security improvements:**
 - Router now only handles model routing with no credential exposure
@@ -356,7 +356,7 @@ cost = router.estimate_cost("design landing page")         # → {tier, model, c
 
 **Migration:**
 - If you need gateway auth management: `clawhub install gateway-guard`
-- If you need troubleshooting: Install [FACEPALM](https://github.com/RuneweaverStudios/FACEPALM) separately
+- If you need troubleshooting: Install [FACEPALM](https://github.com/austindixson/FACEPALM) separately
 
 ---
 
@@ -370,7 +370,7 @@ cost = router.estimate_cost("design landing page")         # → {tier, model, c
 ## Related skills
 
 - **[gateway-guard](https://clawhub.ai/skills/gateway-guard)** — Gateway auth management (use separately if needed)
-- **[FACEPALM](https://github.com/RuneweaverStudios/FACEPALM)** — Intelligent troubleshooting (use separately if needed)
+- **[FACEPALM](https://github.com/austindixson/FACEPALM)** — Intelligent troubleshooting (use separately if needed)
 - **[what-just-happened](https://clawhub.ai/skills/what-just-happened)** — Summarizes gateway restarts
 
 ---

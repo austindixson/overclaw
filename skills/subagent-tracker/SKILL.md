@@ -27,7 +27,7 @@ npm install -g clawhub
 clawhub install subagent-tracker
 ```
 
-Or clone: `git clone https://github.com/RuneweaverStudios/subagent-tracker.git workspace/skills/subagent-tracker`
+Or clone: `git clone https://github.com/austindixson/subagent-tracker.git workspace/skills/subagent-tracker`
 
 ---
 

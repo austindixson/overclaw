@@ -38,14 +38,14 @@ These skills have git repos initialized locally but need GitHub repos created an
 - **Action Required:**
   1. Create repo: https://github.com/new
      - Name: `goals`
-     - Owner: `RuneweaverStudios`
+     - Owner: `austindixson`
      - Description: "Determines user goals from the Notes folder (scribe), categorizes into personal/professional and short/long-term, and produces a morning action plan with motivation and inspiration."
      - Visibility: Public
      - **DO NOT** initialize with README, .gitignore, or license
   2. Add remote and push:
      ```bash
      cd /Users/ghost/.openclaw/workspace/skills/goals
-     git remote add origin https://github.com/RuneweaverStudios/goals.git
+     git remote add origin https://github.com/austindixson/goals.git
      git push -u origin main
      ```
 
@@ -55,14 +55,14 @@ These skills have git repos initialized locally but need GitHub repos created an
 - **Action Required:**
   1. Create repo: https://github.com/new
      - Name: `remotion-video`
-     - Owner: `RuneweaverStudios`
+     - Owner: `austindixson`
      - Description: "Create and render programmatic videos with Remotion (React-based MP4/PNG). Scaffold projects, run Studio, render locally or via Lambda."
      - Visibility: Public
      - **DO NOT** initialize with README, .gitignore, or license
   2. Add remote and push:
      ```bash
      cd /Users/ghost/.openclaw/workspace/skills/remotion-video
-     git remote add origin https://github.com/RuneweaverStudios/remotion-video.git
+     git remote add origin https://github.com/austindixson/remotion-video.git
      git push -u origin main
      ```
 
@@ -72,14 +72,14 @@ These skills have git repos initialized locally but need GitHub repos created an
 - **Action Required:**
   1. Create repo: https://github.com/new
      - Name: `scribe`
-     - Owner: `RuneweaverStudios`
+     - Owner: `austindixson`
      - Description: "Scans OpenClaw logs, config files, chat history, cursor history, behavior, desires, tastes, and drafts to take comprehensive daily and weekly notes with summaries."
      - Visibility: Public
      - **DO NOT** initialize with README, .gitignore, or license
   2. Add remote and push:
      ```bash
      cd /Users/ghost/.openclaw/workspace/skills/scribe
-     git remote add origin https://github.com/RuneweaverStudios/scribe.git
+     git remote add origin https://github.com/austindixson/scribe.git
      git push -u origin main
      ```
 
@@ -89,14 +89,14 @@ These skills have git repos initialized locally but need GitHub repos created an
 - **Action Required:**
   1. Create repo: https://github.com/new
      - Name: `skill-doctor`
-     - Owner: `RuneweaverStudios`
+     - Owner: `austindixson`
      - Description: "Scans the skills folder to detect new, unused, or missing dependencies, fix them, and test a skill in or out of sandbox."
      - Visibility: Public
      - **DO NOT** initialize with README, .gitignore, or license
   2. Add remote and push:
      ```bash
      cd /Users/ghost/.openclaw/workspace/skills/skill-doctor
-     git remote add origin https://github.com/RuneweaverStudios/skill-doctor.git
+     git remote add origin https://github.com/austindixson/skill-doctor.git
      git push -u origin main
      ```
 
@@ -108,7 +108,7 @@ These skills have git repos initialized locally but need GitHub repos created an
   cd /Users/ghost/.openclaw/workspace/skills/clawhub-publisher
   git remote -v
   # If no remote, add:
-  git remote add origin https://github.com/RuneweaverStudios/clawhub-publisher.git
+  git remote add origin https://github.com/austindixson/clawhub-publisher.git
   git push -u origin main
   ```
 
@@ -123,7 +123,7 @@ cd /Users/ghost/.openclaw/workspace/skills
 for skill in goals remotion-video scribe skill-doctor; do
     cd "$skill"
     if ! git remote | grep -q origin; then
-        git remote add origin "https://github.com/RuneweaverStudios/$skill.git"
+        git remote add origin "https://github.com/austindixson/$skill.git"
         git push -u origin main
     fi
     cd ..

@@ -15,7 +15,7 @@ Skills define _how_ tools work. This file is for _your_ specifics.
 **Pain point:** API bills add up; one premium model for everything is expensive. **Benefits:** **Agent swarm** routes to the best model (creative→Kimi, code→MiniMax) and price. **See progress:** Say **"agent status"** — use **subagent-tracker** (TUI has no live indicator).
 
 **Installation:**
-- **Agent Swarm:** `clawhub install agent-swarm` or clone `https://github.com/RuneweaverStudios/agent-swarm` into `workspace/skills/agent-swarm`.
+- **Agent Swarm:** `clawhub install agent-swarm` or clone `https://github.com/austindixson/agent-swarm` into `workspace/skills/agent-swarm`.
 - **Subagent Tracker:** `clawhub install subagent-tracker` or clone into `workspace/skills/subagent-tracker`. Required for “agent status” and duplicate-check before spawn.
 
 **Use examples:**

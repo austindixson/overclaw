@@ -2,7 +2,7 @@
 
 ## Skills Naming Conventions
 
-*   **GitHub repo:** `RuneweaverStudios/agent-swarm` (skill name: Agent Swarm).
+*   **GitHub repo:** `austindixson/agent-swarm` (skill name: Agent Swarm).
 *   **Public/User-Facing Name:** `Agent Swarm | Less Tokens, More Results` (ClawHub slug: `agent-swarm`, e.g. `clawhub.ai/RuneweaverStudios/agent-swarm`). Friday-router and intent-router were removed as redundant; single skill is agent-swarm.
 
 When preparing external communications or user-facing copy, use "Agent Swarm | Less Tokens, More Results" (or the short form "Agent Swarm") and the ClawHub link.

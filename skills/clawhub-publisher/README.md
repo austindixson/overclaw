@@ -3,7 +3,7 @@
 OpenClaw skill: sync local skills (developed by you on GitHub) to ClawHub. Runs as a daily cron job or manually.
 
 - Scans `workspace/skills` for dirs with `.git` and `SKILL.md` or `_meta.json`
-- Keeps only skills whose git `origin` contains your GitHub org (e.g. RuneweaverStudios)
+- Keeps only skills whose git `origin` contains your GitHub org (e.g. austindixson)
 - For each: checks ClawHub for existing version; publishes first version (new) or latest/bumped version (update)
 - Delay between publishes to avoid rate limits
 - Writes log to `OPENCLAW_HOME/logs/clawhub-publisher.log` and summary to `clawhub-publisher-last.json`
