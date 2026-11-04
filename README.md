@@ -33,7 +33,7 @@ User Request
 
 ```bash
 # 1. Clone
-git clone https://github.com/RuneweaverStudios/overclaw.git
+git clone https://github.com/austindixson/overclaw.git
 cd overclaw
 
 # 2. Install everything (Ollama, Mistral, tmux, bun, Claude Code CLI,

@@ -7,7 +7,7 @@ version: 1.0.0
 
 # ClawHub Publisher
 
-Publishes your OpenClaw skills to ClawHub. Only considers skills that have a git repo and a remote pointing to your GitHub (e.g. RuneweaverStudios). For each such skill, checks if it already exists on ClawHub and the current version; uploads the first version for new skills or the latest (bumped) version for updates. Uses delays between uploads to avoid rate limits and writes a completion report.
+Publishes your OpenClaw skills to ClawHub. Only considers skills that have a git repo and a remote pointing to your GitHub (e.g. austindixson). For each such skill, checks if it already exists on ClawHub and the current version; uploads the first version for new skills or the latest (bumped) version for updates. Uses delays between uploads to avoid rate limits and writes a completion report.
 
 ## When to use
 
@@ -35,13 +35,13 @@ python3 scripts/clawhub_sync.py --json
 
 - `clawhub` CLI on PATH, authenticated (`clawhub login`)
 - OpenClaw workspace with skills in `workspace/skills` (or `--skills-dir`)
-- Optional: `CLAWHUB_PUBLISHER_GITHUB_ORG` or config key for GitHub org/user to filter "my" skills (default: RuneweaverStudios)
+- Optional: `CLAWHUB_PUBLISHER_GITHUB_ORG` or config key for GitHub org/user to filter "my" skills (default: austindixson)
 - Optional: `OPENCLAW_HOME` (default: `~/.openclaw`)
 
 ## Behavior
 
 1. Scans skill directories (have `.git` and `SKILL.md` or `_meta.json`).
-2. Keeps only skills whose git `origin` URL contains the configured GitHub org (e.g. `github.com/RuneweaverStudios/...`).
+2. Keeps only skills whose git `origin` URL contains the configured GitHub org (e.g. `github.com/austindixson/...`).
 3. For each skill: reads slug (folder name or `_meta.json` name) and local version from `_meta.json` or SKILL.md frontmatter.
 4. Queries ClawHub (`clawhub inspect <slug> --versions --json`). If skill not found or error, treats as new → publish with local version. If found, compares latest ClawHub version with local; if local is newer or different, publishes with patch-bumped version (or first version for new).
 5. Waits `--delay` seconds between each publish to avoid rate limits.

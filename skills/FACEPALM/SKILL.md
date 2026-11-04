@@ -46,6 +46,6 @@ python3 workspace/skills/FACEPALM/scripts/facepalm.py [--minutes N] [--json]
 
 ## Links
 
-- **GitHub:** https://github.com/RuneweaverStudios/FACEPALM
+- **GitHub:** https://github.com/austindixson/FACEPALM
 - **ClawHub:** Update base URL when new instance is live. Current: https://clawhub.ai/skills/FACEPALM (when published)
 - **Related:** [Agent Swarm](https://clawhub.ai/skills/agent-swarm) - Automatically invokes FACEPALM

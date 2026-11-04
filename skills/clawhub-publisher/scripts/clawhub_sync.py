@@ -25,7 +25,7 @@ def openclaw_home() -> Path:
 
 
 def load_config(openclaw_home_path: Path) -> Dict[str, Any]:
-    cfg = {"githubOrg": "RuneweaverStudios", "delaySeconds": 15, "logDir": "logs"}
+    cfg = {"githubOrg": "austindixson", "delaySeconds": 15, "logDir": "logs"}
     skill_config = Path(__file__).resolve().parent.parent / "config.json"
     if skill_config.exists():
         try:
@@ -183,7 +183,7 @@ def run_sync(
 ) -> Dict[str, Any]:
     delay = delay_sec if delay_sec is not None else config.get("delaySeconds", 20)
     initial_delay = initial_delay_sec if initial_delay_sec is not None else config.get("initialDelaySeconds", 30)
-    github_org = config.get("githubOrg", "RuneweaverStudios")
+    github_org = config.get("githubOrg", "austindixson")
     report = {
         "timestamp": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
         "skills_checked": 0,

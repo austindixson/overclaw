@@ -5,7 +5,7 @@
 set -e
 
 SKILLS_DIR="/Users/ghost/.openclaw/workspace/skills"
-GITHUB_ORG="RuneweaverStudios"
+GITHUB_ORG="austindixson"
 
 cd "$SKILLS_DIR"
 

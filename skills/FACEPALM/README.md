@@ -111,7 +111,7 @@ clawhub install FACEPALM
 **From GitHub:**
 
 ```bash
-git clone https://github.com/RuneweaverStudios/FACEPALM.git
+git clone https://github.com/austindixson/FACEPALM.git
 cp -r FACEPALM ~/.openclaw/workspace/skills/
 ```
 
@@ -127,11 +127,11 @@ cp -r FACEPALM ~/.openclaw/workspace/skills/
    git add SKILL.md README.md _meta.json scripts/
    git commit -m "Initial FACEPALM skill"
    git branch -M main
-   git remote add origin https://github.com/RuneweaverStudios/FACEPALM.git
+   git remote add origin https://github.com/austindixson/FACEPALM.git
    git push -u origin main
    ```
 
-3. Replace `RuneweaverStudios` with your GitHub username or org.
+3. Replace `austindixson` with your GitHub username or org.
 
 ## ClawHub
 
